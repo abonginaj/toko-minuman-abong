@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toko Minuman Abror</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0fdfb;
+        }
+
+        header {
+            background-color: #00b894;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 200px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #00b894;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #ddd;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<script>
+    let total = 0;
+
+    function beli(harga) {
+        total = total + harga;
+        alert("Barang ditambahkan!\nTotal belanja: Rp " + total);
+    }
+</script>
+<body>
+
+<header>
+    <h1>Toko Minuman Abror</h1>
+    <p>Minuman segar favorit kamu 😋</p>
+</header>
+
+<div class="menu">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9" alt="Es Teh">
+        <h3>Es Teh</h3>
+        <p class="price">Rp 5.000</p>
+        <button onclick="beli(5000)">Beli</button>
+
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1546173159-315724a31696" alt="Es Jeruk">
+        <h3>Es Jeruk</h3>
+        <p class="price">Rp 7.000</p>
+        <button onclick="beli(7000)">Beli</button>
+
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1572441710534-680af8f44e8f" alt="Jus Mangga">
+        <h3>Jus Mangga</h3>
+        <p class="price">Rp 10.000</p>
+        <button onclick="beli(10000)">Beli</button>
+
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1598515213692-5f252f75d785" alt="Jus Alpukat">
+        <h3>Jus Alpukat</h3>
+        <p class="price">Rp 12.000</p>
+        <button>Beli</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2025 Toko Minuman Abror</p>
+</footer>
+
+</body>
+</html>
